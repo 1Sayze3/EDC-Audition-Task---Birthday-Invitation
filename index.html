@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Invitation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .book {
+            width: 800px;
+            height: 450px;
+            background: #fff8e1;
+            border: 1px solid #c9b59b;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            display: flex;
+            overflow: hidden;
+            transform: perspective(1200px);
+        }
+
+        .left-page, .right-page {
+            flex: 1;
+            padding: 30px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .left-page {
+            background: radial-gradient(circle, #f9f5ec, #f4ede1);
+            border-right: 1px solid #c9b59b;
+        }
+
+        .right-page {
+            background: radial-gradient(circle, #ffffff, #f9f5ec);
+        }
+
+        .left-page h1, .right-page h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            color: #6b4c35;
+            margin-bottom: 15px;
+        }
+
+        .left-page p, .right-page p {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            color: #5a3927;
+        }
+
+        .left-page p span, .right-page p span {
+            font-weight: bold;
+            color: #4a2618;
+        }
+
+        .rsvp {
+            margin-top: 25px;
+        }
+
+        .rsvp a {
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(90deg, #9c27b0, #7b4f9e);
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .rsvp a:hover {
+            background: linear-gradient(90deg, #ab47bc, #9063b6);
+            transform: translateY(-2px);
+        }
+
+        /* Add book spine effect */
+        .spine {
+            width: 12px;
+            background: #c9b59b;
+            box-shadow: inset -2px 0 6px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="book">
+        <div class="left-page">
+            <h1>You're Invited!</h1>
+            <p>We're excited to invite you to a special birthday celebration of</p>
+            <p><span>Sayan Roy</span></p>
+        </div>
+        <div class="spine"></div>
+        <div class="right-page">
+            <p><span>Date:</span> January 21, 2025</p>
+            <p><span>Time:</span> 6:00 PM</p>
+            <p><span>Venue:</span> Hall 11</p>
+            <p>Come and celebrate this special day with us!</p>
+            <div class="rsvp">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=www.sayanroy2017@gmail.com&su=RSVP%20for%20Birthday&body=Hi,%20I%20would%20like%20to%20RSVP%20for%20the%20birthday!" target="_blank">RSVP Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
